@@ -804,3 +804,5 @@ impl crate::Writable for Fc15I2cSclSpec {
 impl crate::Resettable for Fc15I2cSclSpec {
     const RESET_VALUE: u32 = 0;
 }
+#[doc = "Offset for FC15_I2C_SCL in IOPCTL"]
+pub const FC15_I2C_SCL_IOPCTL_OFFSET: u32 = 0x400;
