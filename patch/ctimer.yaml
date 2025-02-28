@@ -1,0 +1,19 @@
+CTIMER*:
+    IR:
+      _modify:
+        MR0INT:
+          modifiedWriteValues: oneToClear
+        MR1INT:
+          modifiedWriteValues: oneToClear
+        MR2INT:
+          modifiedWriteValues: oneToClear
+        MR3INT:
+          modifiedWriteValues: oneToClear
+        CR0INT:
+          modifiedWriteValues: oneToClear
+        CR1INT: 
+          modifiedWriteValues: oneToClear
+        CR2INT:
+          modifiedWriteValues: oneToClear
+        CR3INT:
+          modifiedWriteValues: oneToClear
