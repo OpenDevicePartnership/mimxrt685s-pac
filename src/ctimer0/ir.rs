@@ -5,35 +5,35 @@ pub type W = crate::W<IrSpec>;
 #[doc = "Field `MR0INT` reader - Interrupt flag for match channel 0."]
 pub type Mr0intR = crate::BitReader;
 #[doc = "Field `MR0INT` writer - Interrupt flag for match channel 0."]
-pub type Mr0intW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type Mr0intW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `MR1INT` reader - Interrupt flag for match channel 1."]
 pub type Mr1intR = crate::BitReader;
 #[doc = "Field `MR1INT` writer - Interrupt flag for match channel 1."]
-pub type Mr1intW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type Mr1intW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `MR2INT` reader - Interrupt flag for match channel 2."]
 pub type Mr2intR = crate::BitReader;
 #[doc = "Field `MR2INT` writer - Interrupt flag for match channel 2."]
-pub type Mr2intW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type Mr2intW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `MR3INT` reader - Interrupt flag for match channel 3."]
 pub type Mr3intR = crate::BitReader;
 #[doc = "Field `MR3INT` writer - Interrupt flag for match channel 3."]
-pub type Mr3intW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type Mr3intW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `CR0INT` reader - Interrupt flag for capture channel 0 event."]
 pub type Cr0intR = crate::BitReader;
 #[doc = "Field `CR0INT` writer - Interrupt flag for capture channel 0 event."]
-pub type Cr0intW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type Cr0intW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `CR1INT` reader - Interrupt flag for capture channel 1 event."]
 pub type Cr1intR = crate::BitReader;
 #[doc = "Field `CR1INT` writer - Interrupt flag for capture channel 1 event."]
-pub type Cr1intW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type Cr1intW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `CR2INT` reader - Interrupt flag for capture channel 2 event."]
 pub type Cr2intR = crate::BitReader;
 #[doc = "Field `CR2INT` writer - Interrupt flag for capture channel 2 event."]
-pub type Cr2intW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type Cr2intW<'a, REG> = crate::BitWriter1C<'a, REG>;
 #[doc = "Field `CR3INT` reader - Interrupt flag for capture channel 3 event."]
 pub type Cr3intR = crate::BitReader;
 #[doc = "Field `CR3INT` writer - Interrupt flag for capture channel 3 event."]
-pub type Cr3intW<'a, REG> = crate::BitWriter<'a, REG>;
+pub type Cr3intW<'a, REG> = crate::BitWriter1C<'a, REG>;
 impl R {
     #[doc = "Bit 0 - Interrupt flag for match channel 0."]
     #[inline(always)]
@@ -144,7 +144,7 @@ impl crate::Readable for IrSpec {}
 impl crate::Writable for IrSpec {
     type Safety = crate::Unsafe;
     const ZERO_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0;
+    const ONE_TO_MODIFY_FIELDS_BITMAP: u32 = 0xff;
 }
 #[doc = "`reset()` method sets IR to value 0"]
 impl crate::Resettable for IrSpec {
