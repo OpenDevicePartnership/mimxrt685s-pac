@@ -1,8 +1,12 @@
 use super::{marker, BitM, FieldSpec, RegisterSpec, Unsafe, Writable};
+
+#[repr(transparent)]
 pub struct R<REG: RegisterSpec> {
     pub(crate) bits: REG::Ux,
     pub(super) _reg: marker::PhantomData<REG>,
 }
+
+#[repr(transparent)]
 pub struct W<REG: RegisterSpec> {
     #[doc = "Writable bits"]
     pub(crate) bits: REG::Ux,
